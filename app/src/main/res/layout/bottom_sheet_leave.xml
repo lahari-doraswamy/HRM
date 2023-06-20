@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Leave Type"
+        android:layout_marginTop="5dp"
+        android:textColor="#287bc7"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="Please select the leave you want to apply for \n and then click apply" />
+    <RadioGroup
+        android:id="@+id/rgLeaveOptions"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbSickLeave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Sick Leave" />
+
+        <RadioButton
+            android:id="@+id/rbCasualLeave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casual Leave"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        <RadioButton
+            android:id="@+id/rbMedicalLeave"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:text="Medical Leave" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_apply"
+        android:textColor="#287bc7"
+        android:layout_marginBottom="15dp"
+        android:text="Apply" />
+
+</LinearLayout>
